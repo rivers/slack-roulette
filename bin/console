@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'irb'
+require 'irb/completion'
+
+require File.expand_path('../../boot', __FILE__)
+
+IRB.start

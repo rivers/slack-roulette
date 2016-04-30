@@ -1,0 +1,35 @@
+<div class="header">
+  <h1>
+    <img src="images/roulette-196.png" class="roulette-icon">
+    Slack Roulette
+  </h1>
+</div>
+
+<% if params['authorized'] == '1' %>
+  <p>
+    You have added Slack Roulette to
+    <% if params['team'] %>
+      <strong><%= CGI.unescape(params['team']) %></strong>.
+    <% else %>
+      your team.
+    <% end %>
+  </p>
+
+  <p>
+    <a href="https://slack.com">Go try it out!</a>
+  </p>
+<% else %>
+  <p>
+    Mention a random user from one of your team's user groups with <code>/roulette</code>
+  </p>
+
+  <div class="add-button">
+    <a href="<%= Client.authorize_url %>"><img alt="Add to Slack" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+  </div>
+<% end %>
+
+<div class="footer">
+  <a href="https://slack.com/admin#user_groups">Manage user groups</a>
+  &sdot;
+  Source: <a href="https://github.com/rivers/slack-roulette">rivers/slack-roulette</a>
+</div>

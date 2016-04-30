@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Slack Roulette</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <style>
+      html{margin:0;padding:0;border:0}a,abbr,acronym,address,article,aside,blockquote,body,caption,code,dd,del,dfn,dialog,div,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,iframe,img,label,legend,li,nav,object,ol,p,pre,q,section,span,table,tbody,td,tfoot,th,thead,tr,ul{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,dialog,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1.5;background:#fff}table{border-collapse:separate;border-spacing:0}caption,td,th{text-align:left;font-weight:400;float:none!important}table,td,th{vertical-align:middle}blockquote:after,blockquote:before,q:after,q:before{content:''}blockquote,q{quotes:"" ""}a img{border:none}:focus{outline:0}
+
+      body {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        color: #555459;
+        font-size: 16px;
+      }
+      .header {
+        background-color: #f9f9f9;
+        padding: 64px 0;
+        margin-bottom: 20px;
+      }
+      .header h1 {
+        height: 48px;
+        line-height: 48px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .header .roulette-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px;
+      }
+      .footer {
+        font-size: 11px;
+      }
+      .footer a {
+        text-decoration: none;
+      }
+      a {
+        color: #3aa3e3;
+      }
+      a:visited {
+        color: #3aa3e3;
+      }
+      .add-button img, .add-button a {
+        display: block;
+        margin: 0 auto;
+        width: 139px;
+        height: 40px;
+      }
+      p, .add_button, .footer {
+        margin: 20px 0;
+      }
+      code {
+        font-family: Consolas, monaco, monospace;
+        font-size: 13px;
+        background-color: #eee;
+        padding: 3px 5px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
